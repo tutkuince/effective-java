@@ -1,0 +1,9 @@
+# Enforce the singleton property with a private constructor or an enum type
+- Making a class a singleton can make it difficult to test its clients because it's impossible to substitute a mock implementation for a singleton
+unless it implements an interface that serves as its type.
+- The main advantage of the public field approach is that the API makes it clear that the class is a singleton: the public static field is final,
+so it will always contain the same object reference.
+- One advantage of the static factory approach is that it gives you the flexibility to change your mind about whether the class is a singleton without
+changing its API.
+
+- A single-element enum type is often the best way to implement a singleton.
