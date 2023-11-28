@@ -1,0 +1,4 @@
+# Enforce noninstanttiability with a private constructor
+- Utility classes were not designed to be instantiated: an instance would be nonsensical.
+- Attempting to enforce noninstantiabilitiy by making a class abstract does not work.
+- A class can be made noninstantiable by including a private constructor.
