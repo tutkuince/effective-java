@@ -1,0 +1,11 @@
+# Avoid creating unnecessary objects
+
+- It is often appropriate to reuse a single object instead of creating a new functionally equivalent object each time it is needed.
+Reuse can be both faster and more stylish.
+- An object can always be reused if it is immutable.
+
+- While String.matches is the easiest way to check if a string matches a regular expression, it's not suitable for repeated use in performance-critical situations.
+
+- Autoboxing blurs but does not erase the distinction between primitive and boxed primitive types.
+
+- The lesson is clear: prefer primitives to boxed primitives, and watch out for unintentional autoboxing.
